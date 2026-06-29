@@ -848,23 +848,33 @@
     <div class="slide-content">
       <h2 class="anim-title">Variante 3: Estratificação Social ACO</h2>
       <div class="content-body">
+        <style>
+          .slide[data-index="5"] .two-col { gap:1.2vw; }
+          .slide[data-index="5"] .two-col .anim-item.card { display:flex; flex-direction:column; padding-top:5vh; padding-bottom:5vh; }
+          .slide[data-index="5"] .two-col .anim-item.card .card-body { flex:1; display:flex; flex-direction:column; justify-content:center; }
+        </style>
         <div class="anim-text lead-text" style="margin-bottom:8px;">
           <p style="font-size:clamp(1em,1.7vw,1.5em);">Introdução de <strong>divisão de trabalho</strong> e castas com papéis diferenciados na busca.</p>
         </div>
         <div class="two-col" style="margin-top:5px;">
-          <div class="anim-item card" style="--delay:0.3s;border-color:rgba(104,211,145,0.3);padding-top:4.5vh;padding-bottom:4.5vh;">
+          <div class="anim-item card" style="--delay:0.3s;border-color:rgba(104,211,145,0.3);">
             <div class="card-icon" style="font-size:clamp(1.6em,2.6vw,2.6em);">👷</div>
             <h3 style="font-size:clamp(1.2em,2vw,1.8em);color:#68d391;margin-bottom:2.5vh;">Casta Trabalhadora <span class="tag tag-green" style="font-size:clamp(0.8em,1.3vw,1.1em);">80%</span></h3>
-            <p style="font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;">Focam na <strong>explotação</strong> do conhecimento acumulado (feromônio).</p>
-            <p style="margin-top:6px;font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;">α<sub>atual</sub> = α & β<sub>atual</sub> = β</p>
-            <p style="margin-top:6px;font-size:clamp(0.95em,1.4vw,1.2em);line-height:1.8;color:#68d391;">Refinam rotas conhecidas</p>
+            <div class="card-body">
+            <ul style="list-style:none;padding-left:0;margin-top:6px;">
+              <li style="font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;">▶</span>Focam na <strong>explotação</strong> do conhecimento acumulado (feromônio). Usam os parâmetros padrão com $\alpha_{\text{atual}} = \alpha$ e $\beta_{\text{atual}} = \beta$.</li>
+            </ul>
+            </div>
           </div>
-          <div class="anim-item card" style="--delay:0.5s;border-color:rgba(246,173,85,0.3);padding-top:4.5vh;padding-bottom:4.5vh;">
+          <div class="anim-item card" style="--delay:0.5s;border-color:rgba(246,173,85,0.3);">
             <div class="card-icon" style="font-size:clamp(1.6em,2.6vw,2.6em);">🧭</div>
             <h3 style="font-size:clamp(1.2em,2vw,1.8em);color:#f6ad55;margin-bottom:2.5vh;">Casta Exploradora <span class="tag tag-amber" style="font-size:clamp(0.8em,1.3vw,1.1em);">20%</span></h3>
-            <p style="font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;">Ignoram feromônio completamente (α<sub>atual</sub> = 0.0).</p>
-            <p style="margin-top:6px;font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;">β<sub>atual</sub> = β × 1.5 (foco em atalhos)</p>
-            <p style="margin-top:6px;font-size:clamp(0.95em,1.4vw,1.2em);line-height:1.8;color:#f6ad55;">Descobrem novos atalhos geométricos</p>
+            <div class="card-body">
+            <ul style="list-style:none;padding-left:0;margin-top:6px;">
+              <li style="font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;padding-bottom:8px;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;">▶</span>Ignoram o feromônio completamente ($\alpha_{\text{atual}} = 0.0$, de modo que $\tau_0 = 1.0$). Elas tomam decisões puramente baseadas na <strong>proximidade física</strong> das cidades.</li>
+              <li style="font-size:clamp(0.95em,1.5vw,1.3em);line-height:1.8;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;">▶</span>Além disso, as Exploradoras têm <strong>foco amplificado na distância</strong> ($\beta_{\text{atual}} = \beta \cdot 1.5$) para priorizar atalhos geográficos.</li>
+            </ul>
+            </div>
           </div>
         </div>
         <div class="two-col" style="margin-top:1.5vh;">
