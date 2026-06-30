@@ -325,25 +325,25 @@
 
   .best { color: #2f855a !important; font-weight: 700; }
 
-  .slide[data-index="14"] .table-wrapper td {
+  .slide[data-index="15"] .table-wrapper td {
     color: #1a202c;
     border-bottom: 1px solid #e2e8f0;
   }
-  .slide[data-index="14"] .table-wrapper th {
+  .slide[data-index="15"] .table-wrapper th {
     color: #2b6cb0;
     background: rgba(49,130,206,0.2);
     border-bottom: 2px solid #e2e8f0;
   }
-  .slide[data-index="14"] .table-wrapper tr:last-child td {
+  .slide[data-index="15"] .table-wrapper tr:last-child td {
     border-bottom: none;
   }
-  .slide[data-index="14"] .table-wrapper strong {
+  .slide[data-index="15"] .table-wrapper strong {
     color: #2b6cb0;
   }
-  .slide[data-index="14"] .table-wrapper td.best {
+  .slide[data-index="15"] .table-wrapper td.best {
     color: #2f855a !important;
   }
-  .slide[data-index="14"] .table-wrapper td.best strong {
+  .slide[data-index="15"] .table-wrapper td.best strong {
     color: inherit;
   }
 
@@ -683,7 +683,7 @@
   <!-- SLIDE 2: TSP -->
   <div class="slide slide-theme-blue" data-index="1">
     <div class="particles" id="particles2"></div>
-    <div class="slide-number">01</div>
+    <div class="slide-number">02</div>
     <div class="slide-content">
       <h2 class="anim-title">O Problema do Caixeiro Viajante (TSP)</h2>
       <style>
@@ -740,7 +740,7 @@
   <!-- SLIDE 3: ACO -->
   <div class="slide slide-theme-teal" data-index="2">
     <div class="particles" id="particles3"></div>
-    <div class="slide-number">02</div>
+    <div class="slide-number">03</div>
     <div class="slide-content">
       <h2 class="anim-title">Algoritmo de Otimização por Colônia de Formigas (ACO)</h2>
       <div class="content-body">
@@ -774,7 +774,7 @@
   <!-- SLIDE 4: ACO Clássico -->
   <div class="slide slide-theme-purple" data-index="3">
     <div class="particles" id="particles4"></div>
-    <div class="slide-number">03</div>
+    <div class="slide-number">04</div>
     <div class="slide-content">
       <h2 class="anim-title">Variante 1: ACO Clássico</h2>
       <div class="content-body">
@@ -817,7 +817,7 @@
   <!-- SLIDE 5: Voter Model -->
   <div class="slide slide-theme-amber" data-index="4">
     <div class="particles" id="particles5"></div>
-    <div class="slide-number">04</div>
+    <div class="slide-number">05</div>
     <div class="slide-content">
       <h2 class="anim-title">Variante 2: Voter Model ACO</h2>
       <div class="content-body">
@@ -844,7 +844,7 @@
   <!-- SLIDE 6: Estratificação Social -->
   <div class="slide slide-theme-green" data-index="5">
     <div class="particles" id="particles6"></div>
-    <div class="slide-number">05</div>
+    <div class="slide-number">06</div>
     <div class="slide-content">
       <h2 class="anim-title">Variante 3: Estratificação Social ACO</h2>
       <div class="content-body">
@@ -888,7 +888,7 @@
   <!-- SLIDE 7: Experimental Design -->
   <div class="slide slide-theme-blue" data-index="6">
     <div class="particles" id="particles7"></div>
-    <div class="slide-number">06</div>
+    <div class="slide-number">07</div>
     <div class="slide-content">
       <h2 class="anim-title">Desenho Experimental e Metodologia</h2>
       <div class="content-body">
@@ -1024,7 +1024,7 @@
           </div>
           
           <div class="method-card anim-item" style="--delay:0.6s">
-            <h3>📏 Escalas de Teste (N)</h3>
+            <h3>📏 Escalas de Teste ($N$)</h3>
             <p style="font-size:clamp(1em, 1.5vw, 1.3em); color:#e2e8f0; margin-bottom:1.5vh;">Avaliação progressiva para testar escalabilidade e identificar gargalos:</p>
             <div class="escala-flex">
               <span class="escala-pill">5</span>
@@ -1056,7 +1056,7 @@
   <!-- SLIDE 8: Clássico Evolução -->
   <div class="slide slide-theme-purple" data-index="7">
     <div class="particles" id="particles8"></div>
-    <div class="slide-number">07</div>
+    <div class="slide-number">08</div>
     <div class="slide-content">
       <h2 class="anim-title">ACO Clássico — Evolução da Distância</h2>
       <div class="content-body">
@@ -1101,7 +1101,7 @@
   <!-- SLIDE 9: Clássico Rota -->
   <div class="slide slide-theme-purple" data-index="8">
     <div class="particles" id="particles9"></div>
-    <div class="slide-number">08</div>
+    <div class="slide-number">09</div>
     <div class="slide-content">
       <h2 class="anim-title">ACO Clássico — Rota Encontrada</h2>
       <div class="content-body">
@@ -1146,13 +1146,16 @@
   <!-- SLIDE 10: Voter Evolução -->
   <div class="slide slide-theme-amber" data-index="9">
     <div class="particles" id="particles10"></div>
-    <div class="slide-number">09</div>
+    <div class="slide-number">10</div>
     <div class="slide-content">
       <h2 class="anim-title">Voter Model ACO — Evolução da Distância</h2>
       <div class="content-body">
         <div class="image-right" style="margin-top:5px;">
           <div class="text-side anim-text">
-            <p style="font-size:clamp(1.2em,1.9vw,1.7em);color:#a0aec0;">Rotas consistentes em escalas médias, mas <span class="highlight-red">tempo quase dobrou</span><br>para ($N=1000$) <span class="highlight-red">~1350 segundos</span>.</p>
+            <ul style="list-style:none;padding-left:0;margin-top:12px;">
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:8px;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#f6ad55;">▶</span><strong style="color:#fbd38d;">Convergência Social ($N=160$):</strong> O Voter Model utiliza a comunicação e imitação local ($p_{\text{voter}}=0.2$) para acelerar o aprendizado e obter rápido consenso.</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#f6ad55;">▶</span><strong style="color:#fbd38d;">Risco de Homogeneização:</strong> A imitação precoce prejudica a exploração tardia. Quando combinada com $\alpha=3.0$, a perda de diversidade é crítica, resultando em rotas de pior qualidade.</li>
+            </ul>
           <style>
             .slide[data-index="9"] .table-wrapper td { color: #1a202c; border-bottom: 1px solid #e2e8f0; padding: 0.5vh 0.4vw; }
             .slide[data-index="9"] .table-wrapper th { color: #2b6cb0; background: rgba(49,130,206,0.2); border-bottom: 2px solid #e2e8f0; padding: 0.6vh 0.4vw; }
@@ -1191,13 +1194,13 @@
   <!-- SLIDE 11: Voter Rota -->
   <div class="slide slide-theme-amber" data-index="10">
     <div class="particles" id="particles11"></div>
-    <div class="slide-number">10</div>
+    <div class="slide-number">11</div>
     <div class="slide-content">
       <h2 class="anim-title">Voter Model ACO — Rota Encontrada</h2>
       <div class="content-body">
         <div class="image-right" style="margin-top:5px;">
           <div class="text-side anim-text">
-            <p style="font-size:clamp(1.2em,1.9vw,1.7em);color:#a0aec0;">O mecanismo de <strong>"votação social"</strong> adiciona sobrecarga computacional. Tempo de execução <span class="highlight-red">~1350 segundos</span> para ($N=1000$).</p>
+            <p style="font-size:clamp(1.2em,1.9vw,1.7em);color:#a0aec0;">Rotas consistentes em escalas médias. No entanto, a <span class="highlight-red">complexidade computacional aumentou drasticamente</span>: o tempo de execução quase dobrou para $(N=1000)$, aproximando-se de <strong>1350 segundos</strong>.</p>
           <style>
             .slide[data-index="10"] .table-wrapper td { color: #1a202c; border-bottom: 1px solid #e2e8f0; padding: 0.5vh 0.4vw; }
             .slide[data-index="10"] .table-wrapper th { color: #2b6cb0; background: rgba(49,130,206,0.2); border-bottom: 2px solid #e2e8f0; padding: 0.6vh 0.4vw; }
@@ -1236,13 +1239,16 @@
   <!-- SLIDE 12: Estratificado Evolução -->
   <div class="slide slide-theme-green" data-index="11">
     <div class="particles" id="particles12"></div>
-    <div class="slide-number">11</div>
+    <div class="slide-number">12</div>
     <div class="slide-content">
       <h2 class="anim-title">Estratificação Social — Evolução da Distância</h2>
       <div class="content-body">
         <div class="image-right" style="margin-top:5px;">
           <div class="text-side anim-text">
-            <p style="font-size:clamp(1.2em,1.9vw,1.7em);color:#a0aec0;"><span class="highlight-green">Excelente desempenho!</span> <strong>"Casta exploradora"</strong> descobriu atalhos geométricos eficazes: <strong>27292.00</strong> para ($N=1000$).</p>
+            <ul style="list-style:none;padding-left:0;margin-top:12px;">
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:8px;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#68d391;">▶</span><strong style="color:#9ae6b4;">Convergência por Castas ($N=160$):</strong> Melhorias contínuas mesmo após a iteração 30, indicando resiliência contra estagnação.</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#68d391;">▶</span><strong style="color:#9ae6b4;">Atuação das Trabalhadoras (80%):</strong> A casta trabalhadora explora o feromônio acumulado, consolidando os atalhos úteis descobertos pelas exploradoras, refletido nas quedas de patamar na curva azul.</li>
+            </ul>
           <style>
             .slide[data-index="11"] .table-wrapper td { color: #1a202c; border-bottom: 1px solid #e2e8f0; padding: 0.5vh 0.4vw; }
             .slide[data-index="11"] .table-wrapper th { color: #2b6cb0; background: rgba(49,130,206,0.2); border-bottom: 2px solid #e2e8f0; padding: 0.6vh 0.4vw; }
@@ -1281,13 +1287,13 @@
   <!-- SLIDE 13: Estratificado Rota -->
   <div class="slide slide-theme-green" data-index="12">
     <div class="particles" id="particles13"></div>
-    <div class="slide-number">12</div>
+    <div class="slide-number">13</div>
     <div class="slide-content">
       <h2 class="anim-title">Estratificação Social — Rota Encontrada</h2>
       <div class="content-body">
         <div class="image-right" style="margin-top:5px;">
           <div class="text-side anim-text">
-            <p style="font-size:clamp(1.2em,1.9vw,1.7em);color:#a0aec0;">A casta exploradora descobriu <strong>atalhos geométricos</strong> muito eficazes, alcançando as menores distâncias globais como: <span class="big-number" style="font-size:clamp(1.5em,2.5vw,2.5em);">27292.00</span></p>
+            <p style="font-size:clamp(1.2em,1.9vw,1.7em);color:#a0aec0;">A casta exploradora descobriu <strong>atalhos</strong> muito eficazes, alcançando as menores distâncias globais como: <span class="big-number" style="font-size:clamp(1.5em,2.5vw,2.5em);">27292.00</span></p>
           <style>
             .slide[data-index="12"] .table-wrapper td { color: #1a202c; border-bottom: 1px solid #e2e8f0; padding: 0.5vh 0.4vw; }
             .slide[data-index="12"] .table-wrapper th { color: #2b6cb0; background: rgba(49,130,206,0.2); border-bottom: 2px solid #e2e8f0; padding: 0.6vh 0.4vw; }
@@ -1327,7 +1333,7 @@
   <!-- SLIDE 14: Comparativo Distância -->
   <div class="slide slide-theme-blue" data-index="13">
     <div class="particles" id="particles14"></div>
-    <div class="slide-number">13</div>
+    <div class="slide-number">14</div>
     <div class="slide-content">
       <h2 class="anim-title">Comparativo — Qualidade da Rota (Distância)</h2>
       <div class="content-body">
@@ -1358,16 +1364,39 @@
     </div>
   </div>
 
-  <!-- SLIDE 15: Tabela Distância -->
+  <!-- SLIDE 15: Grandes Escalas -->
   <div class="slide slide-theme-blue" data-index="14">
     <div class="particles" id="particles15"></div>
-    <div class="slide-number">14</div>
+    <div class="slide-number">15</div>
+    <div class="slide-content">
+      <h2 class="anim-title">Comparativo de Qualidade da Rota: Grandes Escalas</h2>
+      <div class="content-body">
+        <div class="image-right" style="margin-top:0;flex:1;gap:2vw;">
+          <div class="text-side anim-text" style="display:flex;flex-direction:column;justify-content:center;">
+            <ul style="list-style:none;padding-left:0;margin-top:12px;">
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:8px;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#68d391;">▶</span><strong style="color:#90cdf4;">Comportamento por Escala:</strong> Curvas similares até $N \le 40$, com separação a partir de $N \ge 80$.</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:8px;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#68d391;">▶</span><strong style="color:#90cdf4;">Liderança do Estratificado:</strong> Variante ($\alpha=1.0$) domina com folga todas as instâncias complexas.</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-left:2.5vw;position:relative;"><span style="position:absolute;left:0;color:#68d391;">▶</span><strong style="color:#90cdf4;">Estagnação Precoce:</strong> Sem a casta exploradora, colônias convergem para mínimos locais.</li>
+            </ul>
+          </div>
+          <div class="img-side anim-image" style="flex:0 1 50%; min-width:0;">
+            <img src="images/comparativo_melhor_distancia_grandes.png" style="max-height:70vh;width:100%;object-fit:contain;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 16: Tabela Distância -->
+  <div class="slide slide-theme-blue" data-index="15">
+    <div class="particles" id="particles16"></div>
+    <div class="slide-number">16</div>
     <div class="slide-content">
       <h2 class="anim-title">Comparativo — Tabela de Qualidade da Rota</h2>
       <div class="content-body">
         <div class="anim-table" style="margin-top:5px;text-align:center;">
           <div class="table-wrapper" style="background:#fff;border-color:rgba(0,0,0,0.15);display:inline-block;text-align:left;width:100%;">
-            <table style="font-size:clamp(0.8em,1.5vw,1.35em);border-collapse:collapse;">
+            <table style="font-size:clamp(0.85em,1.7vw,1.5em);border-collapse:collapse;">
               <thead>
                 <tr><th>N Cidades</th><th>Clássico ($\alpha=1$)</th><th>Clássico ($\alpha=3$)</th><th>Voter ($\alpha=1$)</th><th>Voter ($\alpha=3$)</th><th style="color:#276749;">Estratificado ($\alpha=1$)</th><th>Estratificado ($\alpha=3$)</th></tr>
               </thead>
@@ -1392,10 +1421,10 @@
     </div>
   </div>
 
-  <!-- SLIDE 16: Tabela Tempo -->
-  <div class="slide slide-theme-blue" data-index="15">
-    <div class="particles" id="particles16"></div>
-    <div class="slide-number">15</div>
+  <!-- SLIDE 17: Tabela Tempo -->
+  <div class="slide slide-theme-blue" data-index="16">
+    <div class="particles" id="particles17"></div>
+    <div class="slide-number">17</div>
     <div class="slide-content">
       <h2 class="anim-title">Comparativo — Escalabilidade de Tempo</h2>
       <div class="content-body">
@@ -1405,24 +1434,24 @@
             <li style="font-size:clamp(1.2em,1.9vw,1.7em);line-height:1.8;padding-left:2.5vw;position:relative;text-align:left;"><span style="position:absolute;left:0;">▶</span><span class="highlight-red">Voter Model chega a ~1350s</span> (sobrecarga do voto social).</li>
           </ul>
           <style>
-            .slide[data-index="15"] .table-wrapper td {
+            .slide[data-index="16"] .table-wrapper td {
               color: #1a202c;
               border-bottom: 1px solid #e2e8f0;
               padding: 1vh 0.8vw;
             }
-            .slide[data-index="15"] .table-wrapper th {
+            .slide[data-index="16"] .table-wrapper th {
               color: #2b6cb0;
               background: rgba(49,130,206,0.2);
               border-bottom: 2px solid #e2e8f0;
               padding: 1.1vh 0.8vw;
             }
-            .slide[data-index="15"] .table-wrapper tr:last-child td {
+            .slide[data-index="16"] .table-wrapper tr:last-child td {
               border-bottom: none;
             }
-            .slide[data-index="15"] .table-wrapper td.best {
+            .slide[data-index="16"] .table-wrapper td.best {
               color: #2f855a !important;
             }
-            .slide[data-index="15"] .table-wrapper .highlight-red {
+            .slide[data-index="16"] .table-wrapper .highlight-red {
               color: #c53030 !important;
               font-weight: 700;
             }
@@ -1450,15 +1479,15 @@
     </div>
   </div>
 
-  <!-- SLIDE 17: Escalabilidade Clássico -->
-  <div class="slide slide-theme-purple" data-index="16">
-    <div class="particles" id="particles17"></div>
-    <div class="slide-number">16</div>
+  <!-- SLIDE 18: Escalabilidade Clássico -->
+  <div class="slide slide-theme-purple" data-index="17">
+    <div class="particles" id="particles18"></div>
+    <div class="slide-number">18</div>
     <div class="slide-content">
       <style>
-        .slide[data-index="16"] .img-side { flex: 0 1 50%; min-width:0; }
-        .slide[data-index="16"] .img-side img { max-height: 70vh; }
-        .slide[data-index="16"] .text-side { flex: 0 1 50%; }
+        .slide[data-index="17"] .img-side { flex: 0 1 50%; min-width:0; }
+        .slide[data-index="17"] .img-side img { max-height: 70vh; }
+        .slide[data-index="17"] .text-side { flex: 0 1 50%; }
       </style>
       <h2 class="anim-title">Escalabilidade de Tempo — ACO Clássico</h2>
       <div class="content-body">
@@ -1479,15 +1508,15 @@
     </div>
   </div>
 
-  <!-- SLIDE 18: Escalabilidade Voter -->
-  <div class="slide slide-theme-amber" data-index="17">
-    <div class="particles" id="particles18"></div>
-    <div class="slide-number">17</div>
+  <!-- SLIDE 19: Escalabilidade Voter -->
+  <div class="slide slide-theme-amber" data-index="18">
+    <div class="particles" id="particles19"></div>
+    <div class="slide-number">19</div>
     <div class="slide-content">
       <style>
-        .slide[data-index="17"] .img-side { flex: 0 1 50%; min-width:0; }
-        .slide[data-index="17"] .img-side img { max-height: 70vh; }
-        .slide[data-index="17"] .text-side { flex: 0 1 50%; }
+        .slide[data-index="18"] .img-side { flex: 0 1 50%; min-width:0; }
+        .slide[data-index="18"] .img-side img { max-height: 70vh; }
+        .slide[data-index="18"] .text-side { flex: 0 1 50%; }
       </style>
       <h2 class="anim-title">Escalabilidade de Tempo — Voter Model</h2>
       <div class="content-body">
@@ -1508,15 +1537,15 @@
     </div>
   </div>
 
-  <!-- SLIDE 19: Escalabilidade Estratificado -->
-  <div class="slide slide-theme-green" data-index="18">
-    <div class="particles" id="particles19"></div>
-    <div class="slide-number">18</div>
+  <!-- SLIDE 20: Escalabilidade Estratificado -->
+  <div class="slide slide-theme-green" data-index="19">
+    <div class="particles" id="particles20"></div>
+    <div class="slide-number">20</div>
     <div class="slide-content">
       <style>
-        .slide[data-index="18"] .img-side { flex: 0 1 50%; min-width:0; }
-        .slide[data-index="18"] .img-side img { max-height: 70vh; }
-        .slide[data-index="18"] .text-side { flex: 0 1 50%; }
+        .slide[data-index="19"] .img-side { flex: 0 1 50%; min-width:0; }
+        .slide[data-index="19"] .img-side img { max-height: 70vh; }
+        .slide[data-index="19"] .text-side { flex: 0 1 50%; }
       </style>
       <h2 class="anim-title">Escalabilidade de Tempo — Estratificação Social</h2>
       <div class="content-body">
@@ -1536,15 +1565,15 @@
     </div>
   </div>
 
-  <!-- SLIDE 20: Comparativo Geral -->
-  <div class="slide slide-theme-blue" data-index="19">
-    <div class="particles" id="particles20"></div>
-    <div class="slide-number">19</div>
+  <!-- SLIDE 21: Comparativo Geral -->
+  <div class="slide slide-theme-blue" data-index="20">
+    <div class="particles" id="particles21"></div>
+    <div class="slide-number">21</div>
     <div class="slide-content">
       <style>
-        .slide[data-index="19"] .img-side { flex: 0 1 50%; min-width:0; }
-        .slide[data-index="19"] .img-side img { max-height: 70vh; }
-        .slide[data-index="19"] .text-side { flex: 0 1 50%; }
+        .slide[data-index="20"] .img-side { flex: 0 1 50%; min-width:0; }
+        .slide[data-index="20"] .img-side img { max-height: 70vh; }
+        .slide[data-index="20"] .text-side { flex: 0 1 50%; }
       </style>
       <h2 class="anim-title">Escalabilidade de Tempo — Comparativo Geral</h2>
       <div class="content-body">
@@ -1564,10 +1593,10 @@
     </div>
   </div>
 
-  <!-- SLIDE 21: Parâmetros -->
-  <div class="slide slide-theme-red" data-index="20">
-    <div class="particles" id="particles21"></div>
-    <div class="slide-number">20</div>
+  <!-- SLIDE 22: Parâmetros -->
+  <div class="slide slide-theme-red" data-index="21">
+    <div class="particles" id="particles22"></div>
+    <div class="slide-number">22</div>
     <div class="slide-content">
       <h2 class="anim-title">Impacto dos Parâmetros $\boldsymbol{\alpha}$ e $\boldsymbol{\beta}$</h2>
       <div class="content-body">
@@ -1599,10 +1628,10 @@
     </div>
   </div>
 
-  <!-- SLIDE 22: Conclusão -->
-  <div class="slide slide-theme-dark" data-index="21">
-    <div class="particles" id="particles22"></div>
-    <div class="slide-number">21</div>
+  <!-- SLIDE 23: Conclusão -->
+  <div class="slide slide-theme-dark" data-index="22">
+    <div class="particles" id="particles23"></div>
+    <div class="slide-number">23</div>
     <div class="slide-content">
       <h2 class="anim-title">Conclusão</h2>
       <div class="content-body">
@@ -1617,7 +1646,7 @@
             <div class="card-icon">⏱️</div>
             <h3 style="color:#fc8181;">Voter Model é Inviável para Grandes Escalas</h3>
             <div class="card-body" style="flex:1;display:flex;flex-direction:column;justify-content:center;">
-            <p style="font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">Embora conceitualmente elegante e eficaz em escalas moderadas, o mecanismo de votação em cada passo de construção de rota acarreta um <strong>gargalo computacional insustentável</strong> em redes acima de 300 cidades.</p>
+            <p style="font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">Embora conceitualmente elegante e eficaz em escalas moderadas, o mecanismo de votação em cada passo de construção de rota acarreta um <strong>gargalo computacional insustentável</strong> em redes acima de $300$ cidades, além de alto consumo de memória.</p>
             </div>
           </div>
         </div>
@@ -1630,10 +1659,9 @@
     </div>
   </div>
 
-  <!-- SLIDE 23: Obrigado -->
-  <div class="slide slide-theme-dark" data-index="22">
-    <div class="particles" id="particles23"></div>
-    <div class="slide-number">22</div>
+  <!-- SLIDE 24: Obrigado -->
+  <div class="slide slide-theme-dark" data-index="23">
+    <div class="particles" id="particles24"></div>
     <div class="slide-content" style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;">
       <div class="anim-title" style="text-align:center;">
         <h1 style="font-size:clamp(4em,8vw,10em);font-weight:900;color:#90cdf4;text-align:center;line-height:1.1;margin-bottom:2vh;">OBRIGADO!</h1>

@@ -180,7 +180,8 @@ style: |
 <!-- slide10: -->
 
 ## Resultados Individuais: Voter Model ACO (Evolução)
-- **Comportamento:** Rotas consistentes em escalas médias. No entanto, a complexidade computacional aumentou drasticamente: o tempo de execução quase dobrou para $N=1000$, aproximando-se de **1350 segundos**.
+- **Convergência Social (N=160):** O Voter Model utiliza a comunicação e imitação local ($p_{voter}=0.2$) para acelerar o aprendizado e obter rápido consenso.
+- **Risco de Homogeneização:** A imitação precoce prejudica a exploração tardia. Quando combinada com $\alpha=3.0$, a perda de diversidade é crítica, resultando em rotas de pior qualidade.
 
 | N Cidades | Distância ($\alpha=1$) | Tempo (s) ($\alpha=1$) | Estabilidade ($\alpha=1$) | Distância ($\alpha=3$) | Tempo (s) ($\alpha=3$) | Estabilidade ($\alpha=3$) |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -220,7 +221,8 @@ style: |
 <!-- slide12: -->
 
 ## Resultados Individuais: Estratificação Social ACO (Evolução)
-- **Comportamento:** Excelente desempenho. A casta exploradora descobriu atalhos geométricos muito eficazes, alcançando as menores distâncias globais nas maiores escalas (ex: **27292.00** para $N=1000$), com tempo estável.
+- **Convergência por Castas (N=160):** Melhorias contínuas mesmo após a iteração 30, indicando resiliência contra estagnação.
+- **Atuação das Trabalhadoras (80%):** A casta trabalhadora explora o feromônio acumulado, consolidando os atalhos úteis descobertos pelas exploradoras, refletido nas quedas de patamar na curva azul.
 
 | N Cidades | Distância ($\alpha=1$) | Tempo (s) ($\alpha=1$) | Estabilidade ($\alpha=1$) | Distância ($\alpha=3$) | Tempo (s) ($\alpha=3$) | Estabilidade ($\alpha=3$) |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -240,7 +242,8 @@ style: |
 <!-- slide13: -->
 
 ## Resultados Individuais: Estratificação Social ACO (Rota)
-- **Comportamento:** Excelente desempenho. A casta exploradora descobriu atalhos geométricos muito eficazes, alcançando as menores distâncias globais nas maiores escalas (ex: **27292.00** para $N=1000$), com tempo estável.
+- **Geometria Superior (N=160):** Rota final extremamente fluida e limpa, apresentando a menor quantidade de cruzamentos e caminhos redundantes.
+- **Atalhos Geométricos Efetivos:** O papel das formigas "batedoras" (exploradoras) se materializa em conexões limpas e lineares que contornam o grafo de forma eficiente.
 
 | N Cidades | Distância ($\alpha=1$) | Tempo (s) ($\alpha=1$) | Estabilidade ($\alpha=1$) | Distância ($\alpha=3$) | Tempo (s) ($\alpha=3$) | Estabilidade ($\alpha=3$) |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -270,6 +273,16 @@ style: |
 ---
 <!-- slide15: -->
 
+## Comparativo de Qualidade da Rota: Grandes Escalas
+- **Comportamento por Escala:** Curvas similares até $N \le 40$, com separação a partir de $N \ge 80$.
+- **Liderança do Estratificado:** Variante ($\alpha=1.0$) domina com folga todas as instâncias complexas.
+- **Estagnação Precoce:** Sem a casta exploradora, colônias convergem para mínimos locais.
+
+![bg right height:380px](images/comparativo_melhor_distancia_grandes.png)
+
+---
+<!-- slide16: -->
+
 ## Comparativo de Desempenho: Tabela de Qualidade da Rota
 
 | N Cidades | Clássico ($\alpha=1$) | Clássico ($\alpha=3$) | Voter ($\alpha=1$) | Voter ($\alpha=3$) | Estratificado ($\alpha=1$) | Estratificado ($\alpha=3$) |
@@ -284,9 +297,8 @@ style: |
 | 640 | **17378.00** | 17997.00 | 17595.00 | 18048.00 | 17600.00 | 17645.00 |
 | 1000 | 27949.00 | 28224.00 | 27902.00 | 28363.00 | **27292.00** | 28110.00 |
 
-
 ---
-<!-- slide16: -->
+<!-- slide17: -->
 
 ## Comparativo de Desempenho: Tabela de Escalabilidade de Tempo
 - **Resumo de Tempo:**
@@ -306,7 +318,7 @@ style: |
 | 1000 | 817.35 | 816.19 | 1350.23 | 1360.26 | 849.54 | **806.63** |
 
 ---
-<!-- slide17: -->
+<!-- slide18: -->
 
 ## Escalabilidade de Tempo: ACO Clássico
 - **Análise do Modelo Clássico:**
@@ -317,7 +329,7 @@ style: |
 ![bg right height:380px](images/comparativo_tempo_classico.png)
 
 ---
-<!-- slide18: -->
+<!-- slide19: -->
 
 ## Escalabilidade de Tempo: Voter Model ACO
 - **Análise do Voter Model:**
@@ -328,7 +340,7 @@ style: |
 ![bg right height:380px](images/comparativo_tempo_voter.png)
 
 ---
-<!-- slide19: -->
+<!-- slide20: -->
 
 ## Escalabilidade de Tempo: Estratificação Social ACO
 - **Análise do Estratificado:**
@@ -339,7 +351,7 @@ style: |
 ![bg right height:380px](images/comparativo_tempo_estratificado.png)
 
 ---
-<!-- slide20: -->
+<!-- slide21: -->
 
 ## Escalabilidade de Tempo: Comparativo Geral
 - **Análise Comparativa Geral:**
@@ -350,7 +362,7 @@ style: |
 ![bg right height:380px](images/comparativo_tempo_geral.png)
 
 ---
-<!-- slide21: -->
+<!-- slide22: -->
 
 ## Discussão: O Impacto dos Parâmetros $\alpha$ e $\beta$
 - **$\alpha=1.0, \beta=3.0$ (Heurística Forte / Feromônio Moderado):**
@@ -363,10 +375,10 @@ style: |
   - **Resultado:** Queda de qualidade de rota (estagnação prematura) em problemas complexos e altos valores de desvio de estabilidade no final (ex: desvio de $253.38$ no Clássico $\alpha=3$).
 
 ---
-<!-- slide22: -->
+<!-- slide23: -->
 
 ## Conclusão dos Resultados Obtidos
 1. **A Estratificação Social é a Variante Vencedora:** O modelo de castas (Trabalhadoras + Exploradoras) superou as outras variantes na qualidade da rota final (distância) sem comprometer o tempo de execução. As formigas exploradoras atuam com sucesso como "batedores", descobrindo atalhos geométricos que quebram o aprisionamento dos feromônios.
-2. **O Voter Model é Inviável para Grandes Escalas:** Embora conceitualmente elegante e eficaz em escalas moderadas, o mecanismo de votação em cada passo de construção de rota acarreta um gargalo computacional insustentável em redes acima de $300$ cidades.
+2. **O Voter Model é Inviável para Grandes Escalas:** Embora conceitualmente elegante e eficaz em escalas moderadas, o mecanismo de votação em cada passo de construção de rota acarreta um gargalo computacional insustentável em redes acima de $300$ cidades, além de alto consumo de memória.
 3. **Parâmetros Importam Mais do que a Variante:** Em todos os casos, a escolha de $\alpha=1, \beta=3$ provou-se crucial para manter a qualidade de rota em grandes escalas. Aumentar $\alpha$ em demasia induz a colônia à cegueira coletiva (estagnação).
 4. **Recomendação:** Para aplicações de roteamento real, recomenda-se a utilização do **ACO Estratificado com parâmetros focados na heurística ($\beta > \alpha$)**.
