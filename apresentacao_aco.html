@@ -1384,8 +1384,8 @@
               </tbody>
             </table>
           </div>
-          <div style="background:#fff;border-radius:10px;padding:0.6vh 1.5vw;margin-top:1.5vh;display:inline-block;border:1px solid rgba(0,0,0,0.1);">
-            <p style="text-align:center;font-size:clamp(1em,1.5vw,1.3em);color:#2f855a;margin:0;font-family:'JetBrains Mono',monospace;font-weight:700;">🥇 Estratificado $\alpha=1$ vence em 5 das 9 escalas, incluindo a maior (N=1000)</p>
+          <div class="anim-item" style="--delay:1s;background:#fff;border-radius:10px;padding:0.6vh 1.5vw;margin-top:1.5vh;display:inline-block;border:1px solid rgba(0,0,0,0.1);">
+            <p style="text-align:center;font-size:clamp(1em,1.5vw,1.3em);color:#2f855a;margin:0;font-family:'JetBrains Mono',monospace;font-weight:700;">🥇 Estratificado $\alpha=1$ vence em 5 das 9 escalas, incluindo a maior ($N=1000$)</p>
           </div>
         </div>
       </div>
@@ -1400,7 +1400,10 @@
       <h2 class="anim-title">Comparativo — Escalabilidade de Tempo</h2>
       <div class="content-body">
         <div class="anim-table" style="margin-top:5px;text-align:center;">
-          <p style="font-size:clamp(1.3em,2vw,1.7em);color:#a0aec0;margin-bottom:1.5vh;text-align:left;">Clássico e Estratificado escalam de forma similar (~800s–850s). <span class="highlight-red">Voter Model chega a ~1350s</span> (sobrecarga do voto social).</p>
+          <ul style="list-style:none;padding-left:0;margin-bottom:1.5vh;">
+            <li style="font-size:clamp(1.2em,1.9vw,1.7em);line-height:1.8;padding-left:2.5vw;position:relative;text-align:left;"><span style="position:absolute;left:0;">▶</span>Clássico e Estratificado escalam de forma similar (~800s–850s).</li>
+            <li style="font-size:clamp(1.2em,1.9vw,1.7em);line-height:1.8;padding-left:2.5vw;position:relative;text-align:left;"><span style="position:absolute;left:0;">▶</span><span class="highlight-red">Voter Model chega a ~1350s</span> (sobrecarga do voto social).</li>
+          </ul>
           <style>
             .slide[data-index="15"] .table-wrapper td {
               color: #1a202c;
