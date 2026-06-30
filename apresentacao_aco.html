@@ -1466,9 +1466,9 @@
           <div class="text-side anim-text">
             <p style="font-size:clamp(1.4em,2.2vw,1.9em);color:#a0aec0;line-height:1.8;">Comportamento temporal dominado pela <strong>complexidade quadrática</strong> do torneio nas cidades.</p>
             <ul style="margin-top:12px;">
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;padding-bottom:6px;">α=3 roda ligeiramente mais rápido em redes médias/grandes</li>
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;padding-bottom:6px;">Atração intensa do feromônio estreita as escolhas das formigas</li>
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;">Menos flutuações = execução marginalmente mais rápida</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">$\alpha=3$ roda ligeiramente mais rápido em redes médias/grandes</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">Atração intensa do feromônio estreita as escolhas das formigas</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;">Menos flutuações = execução marginalmente mais rápida no $\alpha=3$</li>
             </ul>
           </div>
           <div class="img-side anim-image">
@@ -1495,9 +1495,9 @@
           <div class="text-side anim-text">
             <p style="font-size:clamp(1.4em,2.2vw,1.9em);color:#a0aec0;line-height:1.8;">O Voter Model adiciona um passo de comunicação que gera um <span class="highlight-red">grande gargalo computacional</span>.</p>
             <ul style="margin-top:12px;">
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;padding-bottom:6px;">Cada formiga decide se copia o vizinho a cada passo</li>
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;padding-bottom:6px;">Gargalo acentuado em redes > 300 cidades</li>
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;">N=1000: <span class="highlight-red"><strong>1350 segundos</strong></span> — quase <strong>2x mais lento</strong></li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">Cada formiga decide se copia o vizinho a cada passo</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">Gargalo acentuado em redes > 300 cidades</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;">($N=1000$): <span class="highlight-red"><strong>1350 segundos</strong></span> — quase <strong>2x mais lento</strong></li>
             </ul>
           </div>
           <div class="img-side anim-image">
@@ -1524,8 +1524,8 @@
           <div class="text-side anim-text">
             <p style="font-size:clamp(1.4em,2.2vw,1.9em);color:#a0aec0;line-height:1.8;">A divisão de castas (80% trabalhadoras, 20% exploradoras) <span class="highlight-green">não adiciona custo temporal perceptível</span>.</p>
             <ul style="margin-top:12px;">
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;padding-bottom:6px;">Mesma faixa de <strong>800s–850s</strong> na escala máxima</li>
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2;">Variante <span class="highlight-green">recomendada</span>: equilíbrio perfeito entre qualidade de rota e eficiência</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">Mesma faixa de <strong>800s–850s</strong> na escala máxima</li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;">Variante <span class="highlight-green">recomendada</span>: equilíbrio perfeito entre qualidade de rota e eficiência</li>
             </ul>
           </div>
           <div class="img-side anim-image">
@@ -1551,9 +1551,9 @@
         <div class="image-right" style="margin-top:5px;">
           <div class="text-side anim-text">
             <ul style="margin-top:12px;">
-              <li style="font-size:clamp(1.35em,2.1vw,1.8em);line-height:2;padding-bottom:6px;">Variantes se comportam de forma <strong>idêntica</strong> para N ≤ 40</li>
-              <li style="font-size:clamp(1.35em,2.1vw,1.8em);line-height:2;padding-bottom:6px;">A partir de N=80, a ineficiência do <span class="highlight-red">Voter Model</span> se destaca exponencialmente</li>
-              <li style="font-size:clamp(1.35em,2.1vw,1.8em);line-height:2;"><span class="highlight">Clássico</span> e <span class="highlight-green">Estratificado</span> mantêm curvas praticamente <strong>idênticas e escaláveis</strong></li>
+              <li style="font-size:clamp(1.35em,2.1vw,1.8em);line-height:2.2;padding-bottom:6px;">Variantes se comportam de forma <strong>idêntica</strong> para $N \leq 40$</li>
+              <li style="font-size:clamp(1.35em,2.1vw,1.8em);line-height:2.2;padding-bottom:6px;">A partir de $N=80$, a ineficiência do <span class="highlight-red">Voter Model</span> se destaca exponencialmente</li>
+              <li style="font-size:clamp(1.35em,2.1vw,1.8em);line-height:2.2;"><span class="highlight">Clássico</span> e <span class="highlight-green">Estratificado</span> mantêm curvas praticamente <strong>idênticas e escaláveis</strong></li>
             </ul>
           </div>
           <div class="img-side anim-image">
@@ -1569,21 +1569,21 @@
     <div class="particles" id="particles21"></div>
     <div class="slide-number">20</div>
     <div class="slide-content">
-      <h2 class="anim-title">Impacto dos Parâmetros α e β</h2>
+      <h2 class="anim-title">Impacto dos Parâmetros $\boldsymbol{\alpha}$ e $\boldsymbol{\beta}$</h2>
       <div class="content-body">
         <div class="two-col" style="margin-top:5px;">
           <div class="anim-item card" style="--delay:0.3s;border-color:rgba(104,211,145,0.3);padding-top:4vh;padding-bottom:4vh;">
             <div class="card-icon">⚖️</div>
-            <h3 style="color:#68d391;">α=1.0, β=3.0 — Heurística Forte</h3>
-            <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Incentiva a <strong>exploração física inteligente</strong>. Forte sensibilidade à distância (β=3) ajuda a preferir nós próximos.</p>
+            <h3 style="color:#68d391;">$\alpha=1.0, \beta=3.0$ — Heurística Forte</h3>
+            <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Incentiva a <strong>exploração física inteligente</strong>. Forte sensibilidade à distância ($\beta=3$) ajuda a preferir nós próximos.</p>
             <p style="margin-top:10px;font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Feromônio atua como guia de longo prazo sem aprisionar.</p>
             <div style="margin-top:12px;padding:12px 16px;background:rgba(104,211,145,0.1);border-radius:8px;font-size:clamp(1.05em,1.6vw,1.4em);line-height:2;color:#68d391;">
-              ✅ Melhores rotas em N ≥ 320, convergência estável
+              ✅ Melhores rotas em $N \geq 320$, convergência estável
             </div>
           </div>
           <div class="anim-item card" style="--delay:0.5s;border-color:rgba(252,129,129,0.3);padding-top:4vh;padding-bottom:4vh;">
             <div class="card-icon">🔥</div>
-            <h3 style="color:#fc8181;">α=3.0, β=1.0 — Explotação Intensa</h3>
+            <h3 style="color:#fc8181;">$\alpha=3.0, \beta=1.0$ — Explotação Intensa</h3>
             <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Cria um efeito de <strong>atração magnética</strong> nas arestas mais visitadas no início.</p>
             <p style="margin-top:10px;font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Colônia converge rapidamente para caminhos subótimos.</p>
             <div style="margin-top:12px;padding:12px 16px;background:rgba(252,129,129,0.1);border-radius:8px;font-size:clamp(1.05em,1.6vw,1.4em);line-height:2;color:#fc8181;">
