@@ -765,7 +765,7 @@
           </div>
         </div>
         <div class="anim-text" style="margin-top:3vh;text-align:center;">
-          <p style="font-size:clamp(0.9em,1.4vw,1.2em);color:#718096;">Equilíbrio <span class="highlight">Exploração vs. Explotação</span> controlado pelos pesos α (feromônio) e β (heurística de proximidade)</p>
+          <p style="font-size:clamp(0.9em,1.4vw,1.2em);color:#718096;">Equilíbrio <span class="highlight">Exploração vs. Explotação</span> controlado pelos pesos $\alpha$ (feromônio) e $\beta$ (heurística de proximidade)</p>
         </div>
       </div>
     </div>
@@ -1497,7 +1497,7 @@
             <ul style="margin-top:12px;">
               <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">Cada formiga decide se copia o vizinho a cada passo</li>
               <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;padding-bottom:6px;">Gargalo acentuado em redes > 300 cidades</li>
-              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;">($N=1000$): <span class="highlight-red"><strong>1350 segundos</strong></span> — quase <strong>2x mais lento</strong></li>
+              <li style="font-size:clamp(1.15em,1.8vw,1.6em);line-height:2.2;">($N=1000$): <span class="highlight-red"><strong>1350 segundos</strong></span> — quase <strong>2x mais lento que outras variantes</strong></li>
             </ul>
           </div>
           <div class="img-side anim-image">
@@ -1607,28 +1607,30 @@
       <h2 class="anim-title">Conclusão</h2>
       <div class="content-body">
         <div class="two-col" style="margin-top:5px;">
-          <div class="anim-item card" style="--delay:0.3s;border-color:rgba(104,211,145,0.4);padding-top:3vh;padding-bottom:3vh;">
+          <div class="anim-item card" style="--delay:0.3s;border-color:rgba(104,211,145,0.4);padding-top:4vh;padding-bottom:4vh;">
             <div class="card-icon">🏆</div>
             <h3 style="color:#68d391;">Estratificação Social é a Vencedora</h3>
-            <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">O modelo de castas (Trabalhadoras + Exploradoras) superou as demais variantes na <strong>qualidade da rota final</strong> sem comprometer o tempo de execução.</p>
-            <p style="margin-top:8px;font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Exploradoras atuam como "batedores", descobrindo atalhos geométricos.</p>
+            <p style="font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">O modelo de castas (Trabalhadoras + Exploradoras) superou as demais variantes na <strong>qualidade da rota final</strong> sem comprometer o tempo de execução.</p>
+            <p style="margin-top:10px;font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">Exploradoras atuam como "batedores", descobrindo atalhos geométricos.</p>
           </div>
-          <div class="anim-item card" style="--delay:0.5s;border-color:rgba(252,129,129,0.4);padding-top:3vh;padding-bottom:3vh;">
+          <div class="anim-item card" style="--delay:0.5s;border-color:rgba(252,129,129,0.4);display:flex;flex-direction:column;padding-top:4vh;padding-bottom:4vh;">
             <div class="card-icon">⏱️</div>
             <h3 style="color:#fc8181;">Voter Model é Inviável para Grandes Escalas</h3>
-            <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Mecanismo de votação gera <strong>gargalo computacional insustentável</strong> em redes acima de 300 cidades.</p>
+            <div class="card-body" style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+            <p style="font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">Mecanismo de votação gera <strong>gargalo computacional insustentável</strong> em redes acima de 300 cidades.</p>
+            </div>
           </div>
         </div>
         <div class="two-col" style="margin-top:10px;">
-          <div class="anim-item card" style="--delay:0.7s;border-color:rgba(99,179,237,0.4);padding-top:3vh;padding-bottom:3vh;">
+          <div class="anim-item card" style="--delay:0.7s;border-color:rgba(99,179,237,0.4);padding-top:4vh;padding-bottom:4vh;">
             <div class="card-icon">🎯</div>
             <h3 style="color:#63b3ed;">Parâmetros Importam Mais que a Variante</h3>
-            <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">α=1, β=3 foi <strong>crucial</strong> para qualidade em grandes escalas. Aumentar α demais induz estagnação.</p>
+            <p style="font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">$\alpha=1, \beta=3$ foi <strong>crucial</strong> para qualidade em grandes escalas. Aumentar $\alpha$ demais induz estagnação.</p>
           </div>
-          <div class="anim-item card" style="--delay:0.9s;border-color:rgba(246,173,85,0.4);padding-top:3vh;padding-bottom:3vh;">
+          <div class="anim-item card" style="--delay:0.9s;border-color:rgba(246,173,85,0.4);padding-top:4vh;padding-bottom:4vh;">
             <div class="card-icon">💡</div>
             <h3 style="color:#f6ad55;">Recomendação Final</h3>
-            <p style="font-size:clamp(1em,1.6vw,1.4em);line-height:2;">Para aplicações reais de roteamento, utilize <strong>ACO Estratificado</strong> com parâmetros focados na heurística (β > α).</p>
+            <p style="font-size:clamp(1.05em,1.7vw,1.5em);line-height:2.2;">Para aplicações reais de roteamento, utilize <strong>ACO Estratificado</strong> com parâmetros focados na heurística ($\beta > \alpha$).</p>
           </div>
         </div>
       </div>
